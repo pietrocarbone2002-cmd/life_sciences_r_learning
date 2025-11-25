@@ -43,7 +43,15 @@ pcr_data <- data.frame(
     sample_id = c("A", "A", "A", "A", "B", "B", "B", "B", "C", "C", "C", "C"),
     #alternative: sample_id = rep(c("A", "B", "C"), each = 4)
     cycle = rep(c(1, 2, 3, 4), 3),
-    fluorescence = c(120, 180, 250, 320, 95, 140, 210, 260, 160, 240, 310, 400)
+    fluorescence = c(120, 180, 250, 320, 95, 140, 210, 260, 160, 240, 310, 400),
 )
 
 print(pcr_data)
+
+# pcr_data$sample_id
+# pcr_data$cycle
+# pcr_data$fluorescence
+
+pcr_data$fluorescence[pcr_data$sample_id == "B"]
+pcr_data$fluorescence[pcr_data$fluorescence>=300]
+pcr_data$fluorescence[pcr_data$cycle == 2, pcr_data$sample_id == "C"]
