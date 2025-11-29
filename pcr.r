@@ -41,7 +41,6 @@
 
 pcr_data <- data.frame(
     sample_id = c("A", "A", "A", "A", "B", "B", "B", "B", "C", "C", "C", "C"),
-    #alternative: sample_id = rep(c("A", "B", "C"), each = 4)
     cycle = rep(c(1, 2, 3, 4), 3),
     fluorescence = c(120, 180, 250, 320, 95, 140, 210, 260, 160, 240, 310, 400),
 )
